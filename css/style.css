@@ -398,6 +398,11 @@ footer{
     vertical-align: bottom;
 }
 
+.footer-top .big-div .ita-flag:hover{
+    cursor: pointer;
+    color: #7289DA;
+}
+
 .footer-top .big-div .ita-flag::after{
     content: '\02C5';
     font-size: .8em;
@@ -412,6 +417,11 @@ footer{
     margin-top: 25px;
 }
 
+.social i:hover{
+    cursor: pointer;
+    color: #7289DA;
+}
+
 /* .social i{
     margin: 0 5px;
 } */
@@ -424,6 +434,16 @@ footer{
     font-size: 1.1rem;
     text-align: left;
     line-height: 35px;
+}
+
+.footer-top .small-div a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-top .small-div a:hover{
+    color: #7289DA;
 }
 
 /* footer bottom */
