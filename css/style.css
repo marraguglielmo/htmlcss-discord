@@ -81,7 +81,7 @@ h2{
 
 
 .bg-grey{
-    background-color: #D2D2D2;
+    background-color: #F6F6F6;
 }
 
 
@@ -197,15 +197,26 @@ header .div-header ul li a:hover{
 /* section1 (main1) */
 .big-box{
     background-color: transparent;
+    align-self: flex-start;
     width: 43%;
-    margin-right: 50px;
-    margin-bottom: 80px;
 }
 
+.m1.container .container .big-box{
+    margin-right: 100px;
+    align-self: flex-start;
+}
+
+.m2.container .container .big-box{
+    margin-left: 100px;
+}
+.m2.container .container .small-box{
+    margin-top: 30px;
+}
 
 .small-box{
     background-color: transparent;
     width: 27%;
+    align-self: flex-start;
 }
 
 .small-box p{
