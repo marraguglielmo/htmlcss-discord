@@ -45,14 +45,17 @@ h2{
     border: none;
     border-radius: 30px;
     width: fit-content;
-    padding: 8px 22px;
+}
+
+.button, btn-main, .btn-black, .btn-white{
+    font-size: 1.2em;
+    padding: 13px 25px;
 }
 
 /* BOTTONI */
 .btn-white{
     background-color: white;
     color: black;
-    font-size: 1rem;
 }
 
 .btn-white:hover{
@@ -64,7 +67,6 @@ h2{
 .btn-black{
     background-color: rgb(44, 44, 44);
     color: white;
-    font-size: 1rem;
 }
 
 .btn-black:hover{
@@ -74,9 +76,16 @@ h2{
 }
 
 .btn-purple{
-    background-color: white;
+    background-color: #7289DA;
     color: white;
-    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.btn-purple:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -94,7 +103,7 @@ header .div-header{
 }
 
 header .div-header img{
-    width: 60%;
+    width: 150px;
 }
 
 header .div-header img:hover{
@@ -168,30 +177,33 @@ header .div-header ul li a:hover{
     margin-top: 30px;
 }
 
-.hero-area .hero-box #btn-download{
+.hero-area .hero-box .btn-download{
     font-weight: bold;
 }
 
 .hero-area .hero-box #btn-app{
     font-weight: bold;
-    padding: 10.4px 22px;
 }
 
-.hero-area .hero-box #btn-download::before{
+.btn-download::before{
     content: '\2193';
     margin-right: 5px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
 /* MAIN */
 .m1{
     background-color: white;
-    height: 600px;
+    padding: 50px 0;
 }
 
 .m2{
-    height: 600px;
+    padding: 250px 0;
+}
+
+#t1{
+    margin-top: 35px;
 }
 
 /* section1 (main1) */
@@ -226,14 +238,38 @@ header .div-header ul li a:hover{
 
 /* section green */
 .big-img{
-    background-color: #4E8738;
+    background-color: transparent;
     width: 70%;
-    height: 700px;
 }
 
 .big-section{
-    height: 800px;
+    text-align: center;
+    padding: 190px 0;
 }
+
+.big-section .big-img p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.big-section .big-img .bg-star{
+    background-image: url('../img/stars.svg');
+    background-position: bottom 50px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 42%;
+    height: 72px;
+}
+
+.big-section .big-img .bg-star p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 
 /* FOOTER */
 footer{
