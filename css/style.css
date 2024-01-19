@@ -25,8 +25,17 @@ h1{
 }
 
 h2{
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 60px;
+}
+
+h3{
+    font-size: 2.4rem;
+    color: #7289DA;
+}
+
+h4{
+    color: #7289DA;
 }
 
 .container{
@@ -34,10 +43,6 @@ h2{
     justify-content: center;
     align-items: center;
     max-width: auto;
-}
-
-.border{
-    border: 2px dashed black;
 }
 
 .button{
@@ -56,6 +61,11 @@ h2{
 .btn-white{
     background-color: white;
     color: black;
+}
+
+header .btn-white{
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
 .btn-white:hover{
@@ -85,7 +95,12 @@ h2{
     cursor: pointer;
     color: black;
     box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.2);
+}
 
+.footer-bottom .div-footer-bot .text-footer .btn-purple:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 1px 20px 1px rgba(223, 223, 223, 0.2);
 }
 
 
@@ -189,6 +204,7 @@ header .div-header ul li a:hover{
     content: '\2193';
     margin-right: 5px;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
@@ -277,40 +293,71 @@ footer{
 }
 /* footer top */
 .footer-top{
-    height: 440px;
     width: 100%;
     padding-bottom: 15px;
-    border-bottom: 2px solid white;
 }
 
 .div-footer-top{
     display: flex;
     justify-content: center;
     width: 70%;
+    border-bottom: 1px solid #7289daaf;
+    padding: 70px 10px;
 }
 
 .footer-top .big-div{
-    background-color: #D88582;
+    background-color: transparent;
+    color: white;
     width: 30%;
-    height: 400px;
+    margin-right: 90px;
 }
+
+.footer-top .big-div img{
+    width: 30px;
+    margin-top: 32px;
+    vertical-align: bottom;
+}
+
+.footer-top .big-div .ita-flag::after{
+    content: '\02C5';
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+/* .social i{
+    margin: 0 5px;
+} */
+
 .footer-top .small-div{
-    background-color: #62ACA5;
+    background-color: transparent;
     width: 19%;
     height: 400px;
-    border: 2px dashed white;
+    color: white;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 35px;
 }
 
 /* footer bottom */
-.text-footer{
-    background-color: #EEB8C0;
+
+.footer-bottom .div-footer-bot .text-footer .button{
+    margin: 0;
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
 .div-footer-bot{
-    background-color: #ABFCD6;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     width: 70%;
-    padding: 15px 0;
+    padding: 5px 0 60px 0;
 }
