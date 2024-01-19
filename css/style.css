@@ -45,6 +45,83 @@ h4{
     max-width: auto;
 }
 
+/* WAVES */
+.wave1 {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: #FFFFFF;
+    transform: scale(1, 1);
+}
+
+.wave1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: #F6F6F6;
+    right: -25%;
+    top: 20px;
+    z-index: -1;
+}
+
+.wave1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: #FFFFFF;
+    left: -25%;
+    top: -240px;
+    clip-path: ellipse(100% 15% at -15% 100%);
+    z-index: -1;
+}
+
+
+.wave2 {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: #F6F6F6;
+    transform: scale(1, 1);
+}
+
+.wave2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: #FFFFFF;
+    right: -25%;
+    top: 20px;
+    z-index: -1;
+}
+
+.wave2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: #F6F6F6;
+    left: -25%;
+    top: -240px;
+    clip-path: ellipse(100% 15% at -15% 100%);
+    z-index: -1;
+}
+
+
+
+
 .button{
     font-family: 'Poppins', sans-serif;
     border: none;
@@ -211,11 +288,11 @@ header .div-header ul li a:hover{
 /* MAIN */
 .m1{
     background-color: white;
-    padding: 50px 0;
+    padding: 220px 0;
 }
 
 .m2{
-    padding: 250px 0;
+    padding: 220px 0;
 }
 
 #t1{
@@ -227,6 +304,7 @@ header .div-header ul li a:hover{
     background-color: transparent;
     align-self: flex-start;
     width: 43%;
+    z-index: 1;   
 }
 
 .m1.container .container .big-box{
@@ -245,6 +323,7 @@ header .div-header ul li a:hover{
     background-color: transparent;
     width: 27%;
     align-self: flex-start;
+    z-index: 1;   
 }
 
 .small-box p{
@@ -256,6 +335,7 @@ header .div-header ul li a:hover{
 .big-img{
     background-color: transparent;
     width: 70%;
+    z-index: 1;
 }
 
 .big-section{
